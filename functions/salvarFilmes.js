@@ -1,8 +1,7 @@
-const fs = require("fs")
-const catalogo = require("../database/catalogo.json")
+const { writeFileSync } = require("fs")
 
 module.exports = (filmes) => {
     
     let json = JSON.stringify(filmes, null, 4) 
-    fs.writeFileSync("./database/catalogo.json", json)
+    writeFileSync("./database/catalogo.json", json)
 }
