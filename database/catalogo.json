@@ -2,7 +2,7 @@
     {
         "codigo": 1,
         "titulo": "Eternal Sunshine of the Spotless Mind",
-        "duracao": 1.8,
+        "duracao": 108,
         "atores": [
             "Jim Carrey",
             "Kate Winslet",
@@ -17,7 +17,7 @@
     {
         "codigo": 2,
         "titulo": "Doctor Strange in the Multiverse of Madness",
-        "duracao": 2.1,
+        "duracao": 126,
         "atores": [
             "Benedict Cumberbatch",
             "Elizabeth Olsen",
@@ -29,7 +29,7 @@
     {
         "codigo": 3,
         "titulo": "Moneyball",
-        "duracao": 1.5,
+        "duracao": 90,
         "atores": [
             "Jonah Hill",
             "Brad Pitt"
