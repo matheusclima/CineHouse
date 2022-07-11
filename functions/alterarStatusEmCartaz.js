@@ -3,14 +3,14 @@ const salvarFilmes = require("./salvarFilmes")
 var catalogo = require("../database/catalogo.json")
 
 module.exports = codigo => {
-    let filme = buscarFilme(codigo)
-    let index = catalogo.indexOf(filme)
+    let filmeBuscado = buscarFilme(codigo)
 
-    if(filme) {
-        catalogo[index].emCartaz = !catalogo[index].emCartaz
-    } else {
-        console.log("Filme não encontrado")
+    if(!filmeBuscado) {
+        console.log("Filme não encontrado")   
+        return
     }
-
+    
+    filmeBuscado.emCartaz = !filmeBuscado.emCartaz
     salvarFilmes(catalogo)
+
 }
