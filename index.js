@@ -4,9 +4,9 @@ const adicionarFilme = require("./functions/adicionarFilme")
 const alterarStatusEmCartaz = require("./functions/alterarStatusEmCartaz")
 const listarFilmesEmCartaz = require("./functions/listarFilmesEmCartaz")
 const inquirer = require("inquirer")
-var catalogo = require("./database/catalogo.json")
 const perguntas = require("./settings/perguntas")
 const acoes = require("./settings/acoes")
+var catalogo = require("./database/catalogo.json")
 
 var cinema = 'CineHouse'
 
@@ -34,7 +34,7 @@ const responseHandler = (response) => {
                 titulo: response.titulo,
                 anoDeLancamento: response.anoDeLancamento,
                 duracao: response.duracao,
-                emCartaz: response.emCartaz ? "Sim" : "Não",
+                emCartaz: response.emCartaz,
                 atores: []
             }
             adicionarFilme(novoFilme)
